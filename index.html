@@ -121,45 +121,152 @@
         <h2>ЗАО Птицефабрика №1</h2>
     </header>
         <form>
-            <table width="100%" cellspacing="0" cellpadding="4" class="table_C" >
+            <table width="50%" cellspacing="0" cellpadding="4" class="table_C" >
                 <tr>
-                    <td align="right" width="160">Фамилия</td>
-                    <td><input  name="second_name" type="text" value=""></td>
+                    <td align="right" >Фамилия</td>
+                    <td><input  name="second_name" type="text"></td>
                 </tr>
                 <tr>
-                    <td align="right" width="160">Инициалы</td>
-                    <td><input  name="init" type="text" value=""></td>
-                </tr>
-
-                <tr>
-                    <td align="right" width="160">Пароль</td>
-                    <td><input  name="password" type="password" value=""></td>
+                    <td align="right" >Инициалы</td>
+                    <td><input  name="init" type="text"></td>
                 </tr>
 
                 <tr>
-                    <td align="right" width="160">Адрес получателя</td>
-                    <td><input style="width: 190px;" name="adres" type="text" value=""></td>
+                    <td align="right" >Пароль</td>
+                    <td><input  name="password" type="password"></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Адрес получателя</td>
+                    <td><input name="adres" type="text" size="50"></td>
                 </tr>
                 
                 <tr>
-                    <td align="right" width="160">Количесво</td>
-                    <td><input  name="count" type="text" value=""></td>
+                    <td align="right">Количесво</td>
+                    <td><input  name="count" type="text"  size="5"></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Тип</td>
+                    <td>
+                        <select  name="count" size="1"> 
+                            <option value="Сhicken"> Куриные</option>
+                            <option value="Goos"> Гусиные</option>  
+                        </select>
+                        <select  name="quality" size="1"> 
+                            <option value="2 categ"> 2 Категория</option> 
+                            <option value="1 categ"> 1 Категория</option>
+                            <option value="Choicest"> Отборная</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">Доставка</td>
+                    <td>
+                        <input type="radio" name="postmail">Почтой
+                        <input type="radio" name="email">Электронно
+                        <input type="radio" name="courier">Курьером
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">Требуется накладная</td>
+                    <td><input type="checkbox" name="invice"></td>
+                </tr>
+
+                <tr>
+                    <td align="right" >Дополнительная информация</td>
+                    <td><textarea class="addInfo" name="addInfo"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td align="right"  >
+                        <button type="submit">Заказать</button>
+                        <button type="reset">Отменить</button>
+                    </td>
+
                 </tr>
                 
-                Тип
-                <select  name="count" size="1"> 
-                    <option value="Куриные"> Куриные</option>
-                    <option value="Гусиные"> Гусиные</option>  
-                </select>
-                <select  name="quality" size="1"> 
-                    <option value="2 Категория"> 2 Категория</option> 
-                    <option value="1 Категория"> 1 Категория</option>
-                    <option value="Отборная"> Отборная</option>
-                </select>
-                <br>
             </table>
 
         </form>  
     <!--Форма А-->
+
+    <!--Форма Б-->
+    <header>
+        <h2>Пример регистрации сайта</h2>
+    </header>
+        <form>
+            <table class="table_C">
+                <tr >
+                    <td align="left">
+                        Логин:<br>
+                        <input  name="login" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        Пароль:<br>
+                        <input  name="password" type="password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="left">
+                        URL-адрес сайта:<br>
+                        <input name="adres" type="text" value="http://">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="left">
+                        Название сайта:<br>
+                        <input  name="name" type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="left">
+                        Дополнительная информация:
+                        <textarea class="addInfo" name="addInfo"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="left">
+                        Тема сайта:<br>
+                        <select  name="topic" size="1"> 
+                            <option value="topic_1"> Тема не выбрана</option> 
+                            <option value="topic_2"> 1 тема</option>
+                            <option value="topic_3"> 2 тема</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="left">
+                        Банер 88x31:<br>
+                        <input name="name" type="file">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="left">
+                        <button id="but" type="submit">Заказать</button>
+                        <button id="but" type="reset">Отменить</button>
+                    </td>
+
+                </tr>
+                
+            </table>
+        </form>  
+    <!--Форма Б-->
+    <br>
+    <div class="last">
+        <h2 style="color: blue; "> <span style="letter-spacing: 20px;">Таблицы</span> в HTML </h2>
+        <p style="text-align: left; ">Одним из наиболее мощный и широко применяемых в HTML средств являются таблицы</p>
+
+    </div>
 </body>
 </html>

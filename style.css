@@ -64,21 +64,27 @@ h2{
 }
 
 .table_C td {
-  border: 0px solid rgba(255, 255, 255, 0);
+  border: 0px solid rgba(194, 42, 42, 0.925);
+}
+
+.addInfo {
+  width: 500px;      /* подбери под свою страницу */
+  height: 120px;     /* высота поля */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow-y: scroll;
+}
+
+#but {
+  color: blue;
+}
+
+.last {  
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 form {
-  width: 50%;
-}
-
-label {
-  margin: 5px;
-}
-
-input {
-  margin: 3px;
-}
-
-select {
-  margin: 3px;
+  font-size: 20px;
 }
