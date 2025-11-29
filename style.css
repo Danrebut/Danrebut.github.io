@@ -80,9 +80,13 @@ h2{
 }
 
 .last {  
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+
+#op{
+  background-color:blueviolet;
 }
 
 form {
